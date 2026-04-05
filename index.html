@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio | Erinaldo Cardoso</title>
     <link rel="stylesheet" href="style.css">
-    <script src="btn_topo.js"></script>
 </head>
 
 <body>
@@ -21,6 +20,7 @@
                 <li><a href="#sobre">Sobre Mim</a></li>
                 <li><a href="#projetos">Meus Projetos</a></li>
                 <li><a href="#contato">Contato</a></li>
+                <li><button id="btn-tema">Escuro</button></li>
             </ul>
         </nav>
     </header>
@@ -43,7 +43,8 @@
 
         <section id="projetos">
             <h2>Meus Projetos</h2>
-            <div class="projetos-container">
+            <div class="projetos-container"></div>
+            <!-- <div class="projetos-container">
                 <article class="card-projeto">
                     <h3>Projeto 01 - Sistema Anti-Bullying</h3>
                     <p>Esse sistema tem como objetivo receber denúncias de bullying ocorridos no ambiente escolar.</p>
@@ -82,12 +83,12 @@
                     <p>Joguinho da Velha para passar o tempo. Desenvolvido em HTML, CSS e Javascript.</p>
                     <a href="https://github.com/erynaldo/projeto-jogo-da-velha" target="_blank">Ver no GitHub</a>
                 </article>
-            </div>
+            </div> -->
         </section>
 
         <section id="contato">
             <h2>Entre em Contato</h2>
-            <form action="#" method="post">
+            <form action="#" method="post" id="meu-formulario">
                 <div class="campo">
                     <label for="nome">Nome:</label>
                     <input type="text" id="nome" required>
@@ -117,6 +118,9 @@
             <path d="m18 15-6-6-6 6" />
         </svg>
     </a>
+
+    <script src="script_btn_topo.js"></script>
+    <script src="script.js"></script>
 
 </body>
 

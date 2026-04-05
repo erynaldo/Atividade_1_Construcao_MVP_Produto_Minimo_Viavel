@@ -52,6 +52,23 @@ nav a:hover {
     text-decoration: underline;
 }
 
+#btn-tema {
+    padding: 4px 8px;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+body.dark-theme {
+    --light-bg: #0f172a;
+    --dark-color: #f1f5f9;
+    --white: #1e293b;
+    --primary-color: #3b82f6;
+}
+
 section {
     padding: 60px 5%;
     max-width: 1200px;
@@ -97,11 +114,12 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     flex: 1 1 300px;
     max-width: 400px;
-    /* align-content: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .card-projeto h3 {
-    color: #026281;
     margin-bottom: 10px;
     text-align: center;
 }
@@ -188,12 +206,16 @@ footer {
     text-align: center;
     padding: 30px;
     background-color: var(--dark-color);
-    color: #ffffff;
+    color: var(--white);
     margin-top: 40px;
 }
 
+footer p {
+    font-size: 17px;
+}
+
 span {
-    font-size: 13px;
+    font-size: 15px;
     color: #7c7d7e;
 }
 
@@ -206,7 +228,6 @@ span {
     width: 50px;
     height: 50px;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    /* Usando o gradiente que sugeri antes */
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -219,16 +240,12 @@ span {
 
 #btn-top:hover {
     transform: translateY(-5px);
-    /* Efeito de levitar ao passar o mouse */
-    filter: brightness(1.1);
+    filter: brightness(1.1); /* Efeito de levitar ao passar o mouse */
 }
 
-/* Garante que a rolagem da página inteira seja suave */
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; /* Rolagem suave da página */
 }
-
-/* Fim da Implementação do botão Ir para o topo da página */
 
 
 /* Responsividade para mobile */
