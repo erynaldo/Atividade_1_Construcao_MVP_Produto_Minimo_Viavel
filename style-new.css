@@ -1,0 +1,362 @@
+:root {
+    --primary-color: #2563eb;
+    --dark-color: #0f172a;
+    --light-bg: #f1f5f9;
+    --white: #ffffff;
+    --body-bg: #ebe8e8;
+    --bg-estiloso: linear-gradient(1deg, #8091ef 10%, #05256b 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    /* font-family: "Poppins", sans-serif; */
+    line-height: 1.6;
+    background-color: var(--body-bg);
+    color: var(--dark-color);
+}
+
+header {
+    background-color: var(--white);
+    padding: 0.8rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+#logo-nome {
+    display: flex;
+    gap: 18px;
+}
+
+#logo {
+    width: 50px;
+    height: 50px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--dark-color);
+    font-weight: 600;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+#btn-tema {
+    padding: 4px 8px;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.dark-theme {
+    --light-bg: #0f172a;
+    --dark-color: #f1f5f9;
+    --white: #1e293b;
+    --primary-color: #3b82f6;
+    background: #181818;
+    color: #f1f5f9;
+    /* min-width: 100vw; */
+    --bg-estiloso: linear-gradient(1deg, #f4ebeb 10%, #f5a194 100%);
+}
+
+section {
+    padding: 6px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#titulo-sobre-mim {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--dark-color);
+}
+
+#sobre-mim {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    display: flex;
+}
+
+.meu-link {
+    margin-left: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 7px;
+    background: var(--primary-color);
+    border-radius: 5px;
+    color: var(--white)
+}
+
+.meu-link:hover {
+    background-color: #0d48c7;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+}
+
+#ico-claro-escuro {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+#sobre {
+    display: flex;
+    width: 80%;
+    padding: 70px;
+    margin-top: 70px;
+    align-items: center;
+    text-align: justify;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    background: var(--white);
+}
+
+#sobre img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 2px solid #dfe3e6;
+}
+
+#sobre p {
+    margin-left: 30px;
+    color: var(--dark-color);
+}
+
+h2 {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 10px;
+}
+
+.projetos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card-projeto {
+    background: var(--bg-estiloso);
+    color: var(--white);
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 300px;
+    /* max-width: 400px; */
+    /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
+}
+
+
+.card-projeto:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.img-projeto {
+    width: 8rem;
+    display: flex;
+    margin: 20px auto;
+}
+
+.card-projeto h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.card-projeto p {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.card-projeto a:visited {
+    color: #0da9dd;
+}
+
+.status-projeto {
+    font-weight: 600;
+    color: #000000;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding: 1px 10px;
+    background-color: #34b56c;
+}
+
+.projeto-git {
+    color: #93095a;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.projeto-git:hover {
+    text-decoration: underline;
+}
+
+form {
+    background: var(--white);
+    padding: 40px;
+    margin-bottom: 30px;
+    border-radius: 16px;
+    max-width: 550px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e2e8f0;
+    margin-bottom: 30px;
+}
+
+.contato h2 {
+    margin-bottom: 30px;
+    color: var(--dark-color);
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+form label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+form input,
+form textarea {
+    padding: 14px;
+    border: 2px solid #e7e7e8;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: #f8fafc;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #9db8d2;
+    outline: none;
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+form button {
+    margin-top: 10px;
+    padding: 16px;
+    background: var(--primary-color);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0d48c7;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: var(--white);
+    color: var(--dark-color);
+}
+
+footer p {
+    font-size: 17px;
+}
+
+span {
+    font-size: 15px;
+    color: var(--primary-color);
+}
+
+/* Implementação do botão Ir para o topo da página */
+#btn-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    z-index: 1000;
+}
+
+#btn-top:hover {
+    transform: translateY(-5px);
+    filter: brightness(1.1); /* Efeito de levitar ao passar o mouse */
+}
+
+html {
+    scroll-behavior: smooth; /* Rolagem suave da página */
+}
+
+
+/* Para mobile */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    nav ul {
+        margin-top: 20px;
+        gap: 20px;
+    }
+
+    #sobre {
+        width: 90%;
+        padding: 40px 20px;
+        flex-direction: column;
+    }
+
+    #sobre p {
+        margin-left: 0;
+    }
+
+    .card-projeto {
+        flex-basis: 100%;
+        min-height: 300px;
+    }
+}
